@@ -20,3 +20,13 @@ For number sum as the ouptput is being used is one hot encoded vector represetin
 
 ### training logs
 
+poch 0 total_correct_labels: 56311 total_correct_sums: 47795 loss: 494.98781556636095
+epoch 1 total_correct_labels: 115021 total_correct_sums: 105978 loss: 118.19812903553247
+epoch 2 total_correct_labels: 173965 total_correct_sums: 164563 loss: 96.3456956744194
+epoch 3 total_correct_labels: 233023 total_correct_sums: 223265 loss: 87.37342839268968
+epoch 4 total_correct_labels: 292141 total_correct_sums: 282005 loss: 86.00667833397165
+epoch 5 total_correct_labels: 351343 total_correct_sums: 340919 loss: 76.07689337385818
+epoch 6 total_correct_labels: 410619 total_correct_sums: 399908 loss: 70.1180489838589
+epoch 7 total_correct_labels: 469822 total_correct_sums: 458700 loss: 79.50271089468151
+epoch 8 total_correct_labels: 529089 total_correct_sums: 517693 loss: 74.1352062295191
+epoch 9 total_correct_labels: 588396 total_correct_sums: 576713 loss: 69.47311828006059
