@@ -12,6 +12,19 @@ The model architecture consists of two inputs - image and number. The image is p
 
 We further concatenate the output vectors from number and image to create a joint vector (at 3rd last layer) and use the concatenated vector for further image label and number sum classification.
 
+Network(
+  (conv1): Conv2d(1, 6, kernel_size=(5, 5), stride=(1, 1)) --> image input
+  (conv2): Conv2d(6, 12, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=192, out_features=120, bias=True)
+  (fc2): Linear(in_features=130, out_features=60, bias=True) ---> image & number concatenated vector as input
+  (out): Linear(in_features=60, out_features=10, bias=True)
+  
+  (embedding): Embedding(10, 10) ---> number input
+  (fc1_1): Linear(in_features=10, out_features=10, bias=True)
+  (fc2_1): Linear(in_features=10, out_features=10, bias=True)
+  (fc3_1): Linear(in_features=130, out_features=60, bias=True) ---> image & number concatenated vector as input
+  (out_1): Linear(in_features=60, out_features=19, bias=True)
+)
 
 
 ## loss function used
