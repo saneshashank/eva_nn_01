@@ -8,5 +8,7 @@ This notebook illustrated training of a neural network model which takes MNIST d
 For the purpose of this model we have defined an custom dataset class **NumberMixture** which takes MNIST data set as input and generates the image, a random number, the image label and the sum of radom number and number in image.
 
 ##  Model Architecture
-The model architecture 
+The model architecture consists of two inputs - image and number. The image is passed through two convolutional and max pooling layer before extracting vector, the number is passed through embedding layer to get vector representation.
+
+## loss function used
 
