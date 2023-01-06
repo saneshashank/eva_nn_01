@@ -10,5 +10,13 @@ For the purpose of this model we have defined an custom dataset class **NumberMi
 ##  Model Architecture
 The model architecture consists of two inputs - image and number. The image is passed through two convolutional and max pooling layer before extracting vector, the number is passed through embedding layer to get vector representation.
 
+We further concatenate the output vectors from number and image to create a joint vector (at 3rd last layer) and use the concatenated vector for further image label and number sum classification.
+
+
+
 ## loss function used
+For image label - cross entropy loss function has been used as its a classification problem.
+For number sum as the ouptput is being used is one hot encoded vector represeting the 19 possiblities from 0-18, it effectively turns this into a classification problem, hence here also cross entropy has been used.
+
+### training logs
 
